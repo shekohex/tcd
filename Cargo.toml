@@ -1,0 +1,15 @@
+[package]
+name = "tcd"
+version = "0.1.0"
+authors = ["Shady Khalifa <shekohex@gmail.com>"]
+edition = "2018"
+publish = false
+description = "A Bandwidth Limiter Daemon using `tc`"
+repository="https://github.com/shekohex/tcd"
+readme="./README.md"
+
+[dependencies]
+futures-preview = "0.3.0-alpha.16"
+tide = { version = "^0.2", default-features = false, features = ["hyper"] }
+serde_json = "^1.0"
+serde = { version = "^1.0", features = ["derive"] }

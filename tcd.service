@@ -1,0 +1,14 @@
+[Unit]
+Description=A Bandwidth Limiter Daemon using tc
+Wants=network.target
+After=syslog.target network-online.target
+
+[Service]
+Type=simple
+RemainAfterExit=yes
+ExecStart=/home/shekohex/tcd
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
